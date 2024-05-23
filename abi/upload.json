@@ -1,0 +1,127 @@
+[
+    {
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "_ipfshash",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "_userId",
+                "type": "string"
+            }
+        ],
+        "name": "uploadtoIPFs",
+        "outputs": [
+            {
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "_userid",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "_name",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "_email",
+                "type": "string"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_mobileNo",
+                "type": "uint256"
+            }
+        ],
+        "name": "userRegistration",
+        "outputs": [
+            {
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "_userid",
+                "type": "string"
+            }
+        ],
+        "name": "getUserDetails",
+        "outputs": [
+            {
+                "components": [
+                    {
+                        "internalType": "string",
+                        "name": "userid",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "name",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "string",
+                        "name": "email",
+                        "type": "string"
+                    },
+                    {
+                        "internalType": "uint256",
+                        "name": "mobileNo",
+                        "type": "uint256"
+                    }
+                ],
+                "internalType": "struct Test.UserDetails",
+                "name": "",
+                "type": "tuple"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "_userId",
+                "type": "string"
+            }
+        ],
+        "name": "getUserUploadeIPFS",
+        "outputs": [
+            {
+                "components": [
+                    {
+                        "internalType": "string[]",
+                        "name": "hash",
+                        "type": "string[]"
+                    }
+                ],
+                "internalType": "struct Test.IpfsDetails",
+                "name": "",
+                "type": "tuple"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    }
+]
